@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <ImageView
+        android:id="@+id/iv_register"
+        android:layout_width="match_parent"
+        android:layout_height="154dp"
+        android:layout_marginTop="-2dp"
+        android:src="@mipmap/register_chinese" />
+
+    <TextView
+        android:id="@+id/tv_rphonenum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_register"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="50dp"
+        android:text="手机号："
+        android:textSize="20sp" />
+    <EditText
+        android:id="@+id/ev_rphonenum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_register"
+        android:layout_toRightOf="@+id/tv_rphonenum"
+        android:layout_marginTop="74dp"
+        android:layout_marginRight="50dp"
+        android:background="@mipmap/editview"
+        android:hint="输入手机号"
+        android:maxLength="11"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tv_rpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_rphonenum"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="50dp"
+        android:text="密     码："
+        android:textSize="20sp" />
+    <EditText
+        android:id="@+id/ev_rpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_rphonenum"
+        android:layout_toRightOf="@+id/tv_rpassword"
+        android:layout_marginTop="44dp"
+        android:layout_marginRight="50dp"
+        android:hint="输入密码"
+        android:gravity="center"
+        android:inputType="textPassword"
+        android:background="@mipmap/editview"/>
+
+    <TextView
+        android:id="@+id/tv_rpassword2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ev_rpassword"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="50dp"
+        android:text="确认密码："
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/ev_rpassword2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ev_rpassword"
+        android:layout_toRightOf="@+id/tv_rpassword2"
+        android:background="@mipmap/editview"
+        android:layout_marginTop="44dp"
+        android:layout_marginRight="50dp"
+        android:hint="再次输入密码"
+        android:gravity="center"
+        android:inputType="textPassword"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/bv_rRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ev_rpassword2"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:text="注册"
+        android:textSize="20sp"
+        android:background="@drawable/button_bgchange"/>
+
+    <TextView
+        android:id="@+id/tv_rnameSet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_register"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="50dp"
+        android:text="昵    称："
+        android:textSize="20sp"
+        android:visibility="invisible"
+        android:enabled="false"/>
+    <EditText
+        android:id="@+id/ev_rnameSet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_register"
+        android:layout_toRightOf="@+id/tv_rnameSet"
+        android:layout_marginTop="74dp"
+        android:layout_marginRight="50dp"
+        android:background="@mipmap/editview"
+        android:hint="输入昵称"
+        android:gravity="center"
+        android:visibility="invisible"
+        android:enabled="false"/>
+
+    <TextView
+        android:id="@+id/tv_rquestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_rphonenum"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="50dp"
+        android:text="隐私问题："
+        android:textSize="20sp"
+        android:visibility="invisible"
+        android:enabled="false"/>
+    <EditText
+        android:id="@+id/ev_rquestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_rphonenum"
+        android:layout_toRightOf="@+id/tv_rquestion"
+        android:layout_marginTop="44dp"
+        android:layout_marginRight="50dp"
+        android:hint="输入问题"
+        android:gravity="center"
+        android:background="@mipmap/editview"
+        android:visibility="invisible"
+        android:enabled="false"/>
+
+    <TextView
+        android:id="@+id/tv_rqanswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ev_rpassword"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="50dp"
+        android:text="隐私答案："
+        android:textSize="20sp"
+        android:visibility="invisible"
+        android:enabled="false"/>
+
+    <EditText
+        android:id="@+id/ev_rqanswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ev_rpassword"
+        android:layout_toRightOf="@+id/tv_rqanswer"
+        android:background="@mipmap/editview"
+        android:layout_marginTop="44dp"
+        android:layout_marginRight="50dp"
+        android:hint="输入隐私答案"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        android:enabled="false"/>
+
+    <Button
+        android:id="@+id/bv_rsetInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ev_rpassword2"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:text="设置"
+        android:textSize="20sp"
+        android:background="@drawable/button_bgchange"
+        android:visibility="invisible"
+        android:enabled="false"/>
+
+
+</RelativeLayout>
