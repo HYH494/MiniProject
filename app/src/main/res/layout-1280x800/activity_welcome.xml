@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Welcome">
+
+    <ImageView
+        android:id="@+id/iv_welcome"
+        android:layout_width="800px"
+        android:layout_height="344px"
+        android:src="@mipmap/welcome" />
+    <TextView
+        android:id="@+id/tv_welcomeTip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_welcome"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="80px"
+        android:text="-在开始前，请先进行一些相关设置(Before start, please do some setting first.)\n-请选择您的语言(Please choose your language)："
+        android:textSize="30sp"
+        android:textColor="#000000"/>
+    <RadioGroup
+        android:id="@+id/rg_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="300dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="80px"
+        android:layout_below="@+id/tv_welcomeTip">
+
+        <RadioButton
+            android:id="@+id/rb_welcome_chinese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="中文(Chinese)"
+            android:textSize="30sp"/>
+
+        <RadioButton
+            android:id="@+id/rb_welcome_english"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="英语(English)"
+            android:layout_marginTop="30px"
+            android:textSize="30sp"/>
+
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/cb_welcome_sure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rg_welcome"
+        android:layout_marginTop="80px"
+        android:layout_marginLeft="60dp"
+        android:text="我同意诚信使用本软件(I promise to use Survey App honestly)"
+        android:layout_marginRight="60dp"
+        android:textSize="30sp"/>
+
+    <Button
+        android:id="@+id/bv_welcome_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="80px"
+        android:layout_below="@+id/cb_welcome_sure"
+        android:text="确认(CONFIRM)"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:background="@drawable/button_bgchange"/>
+
+</RelativeLayout>

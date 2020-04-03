@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <TextView
+        android:id="@+id/iv_findpwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-2dp"
+        android:background="@mipmap/findpwd"
+        android:gravity="center_horizontal"
+        android:text="@string/pwdfind"
+        android:textColor="#ffffff"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/tv_fphonenum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_findpwd"
+        android:layout_marginTop="74dp"
+        android:layout_marginLeft="50dp"
+        android:text="@string/PhoneNum"
+        android:textSize="28sp" />
+    <TextView
+        android:id="@+id/tv_fphonenumshow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_findpwd"
+        android:layout_toRightOf="@+id/tv_fphonenum"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="50dp"
+        android:textSize="28sp"
+        android:maxLength="11"/>
+
+    <TextView
+        android:id="@+id/tv_fquestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_fphonenum"
+        android:layout_marginTop="74dp"
+        android:layout_marginLeft="50dp"
+        android:text="@string/secretQue"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/tv_fquestionshow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_fphonenum"
+        android:layout_toRightOf="@+id/tv_fquestion"
+        android:layout_marginTop="70dp"
+        android:textSize="28sp"
+        android:layout_marginRight="50dp"/>
+
+    <TextView
+        android:id="@+id/tv_fqanswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_fquestionshow"
+        android:layout_marginTop="74dp"
+        android:layout_marginLeft="50dp"
+        android:text="@string/secretAns"
+        android:textSize="28sp"/>
+
+    <EditText
+        android:id="@+id/ev_fqanswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_fquestionshow"
+        android:layout_toRightOf="@+id/tv_fqanswer"
+        android:background="@mipmap/editview"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="50dp"
+        android:hint="@string/InsecretAns"
+        android:gravity="center"
+        android:inputType="textPassword"
+        android:textSize="28sp"/>
+
+    <Button
+        android:id="@+id/bv_findpwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ev_fqanswer"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:text="@string/verification"
+        android:textSize="28sp"
+        android:background="@drawable/button_bgchange"/>
+
+    <TextView
+        android:id="@+id/tv_fpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_fphonenum"
+        android:layout_marginTop="74dp"
+        android:layout_marginLeft="50dp"
+        android:text="@string/resetpwd"
+        android:textSize="28sp"
+        android:visibility="invisible"
+        android:enabled="false"/>
+    <EditText
+        android:id="@+id/ev_fpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_fphonenum"
+        android:layout_toRightOf="@+id/tv_fpassword"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="50dp"
+        android:hint="@string/Inpassword"
+        android:textSize="28sp"
+        android:gravity="center"
+        android:background="@mipmap/editview"
+        android:inputType="textPassword"
+        android:visibility="invisible"
+        android:enabled="false"/>
+
+    <TextView
+        android:id="@+id/tv_fpassword2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ev_fpassword"
+        android:layout_marginTop="74dp"
+        android:layout_marginLeft="50dp"
+        android:text="@string/confpassword"
+        android:textSize="28sp"
+        android:visibility="invisible"
+        android:enabled="false"/>
+
+    <EditText
+        android:id="@+id/ev_fpassword2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ev_fpassword"
+        android:layout_toRightOf="@+id/tv_fpassword2"
+        android:background="@mipmap/editview"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="50dp"
+        android:hint="@string/confpassword2"
+        android:inputType="textPassword"
+        android:gravity="center"
+        android:textSize="28sp"
+        android:visibility="invisible"
+        android:enabled="false"/>
+
+    <Button
+        android:id="@+id/bv_fresetpwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ev_fpassword2"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:text="@string/confirm"
+        android:textSize="28sp"
+        android:background="@drawable/button_bgchange"
+        android:visibility="invisible"
+        android:enabled="false"/>
+
+
+</RelativeLayout>

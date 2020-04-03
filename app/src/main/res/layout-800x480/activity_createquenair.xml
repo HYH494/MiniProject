@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainFace">
+    <ImageView
+        android:id="@+id/iv_create_qr"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/bv_create_createqr"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/iv_create_qr"
+        android:background="@drawable/button_bgchange"
+        android:text="@string/createquestionnaireQr" />
+
+    <TextView
+        android:id="@+id/tv_create_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/question_create"
+        android:textSize="20sp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="44dp"/>
+
+    <EditText
+        android:id="@+id/ev_create_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="30dp"
+        android:textSize="16sp"
+        android:layout_toRightOf="@+id/tv_create_question"/>
+
+    <TextView
+        android:id="@+id/tv_create_option1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_create_question"
+        android:text="@string/option1"
+        android:textSize="20sp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="9dp"/>
+
+    <EditText
+        android:id="@+id/ev_create_option1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="30dp"
+        android:textSize="16sp"
+        android:layout_below="@+id/tv_create_question"
+        android:layout_toRightOf="@+id/tv_create_option1"/>
+
+    <TextView
+        android:id="@+id/tv_create_option2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_create_option1"
+        android:text="@string/option2"
+        android:textSize="20sp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="9dp"/>
+
+    <EditText
+        android:id="@+id/ev_create_option2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="30dp"
+        android:textSize="16sp"
+        android:layout_toRightOf="@+id/tv_create_option2"
+        android:layout_below="@+id/tv_create_option1"/>
+
+    <TextView
+        android:id="@+id/tv_create_option3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/option3"
+        android:textSize="20sp"
+        android:layout_below="@+id/tv_create_option2"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="9dp"/>
+
+    <EditText
+        android:id="@+id/ev_create_option3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="30dp"
+        android:textSize="16sp"
+        android:layout_toRightOf="@+id/tv_create_option3"
+        android:layout_below="@+id/tv_create_option2"/>
+
+    <TextView
+        android:id="@+id/tv_create_option4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/option4"
+        android:textSize="20sp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/tv_create_option3"
+        android:layout_marginTop="9dp"/>
+
+    <EditText
+        android:id="@+id/ev_create_option4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="30dp"
+        android:textSize="16sp"
+        android:layout_toRightOf="@+id/tv_create_option4"
+        android:layout_below="@+id/tv_create_option3"/>
+
+    <TextView
+        android:id="@+id/tv_create_option5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/option5"
+        android:textSize="20sp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/tv_create_option4"
+        android:layout_marginTop="9dp"/>
+
+    <EditText
+        android:id="@+id/ev_create_option5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="30dp"
+        android:textSize="16sp"
+        android:layout_toRightOf="@+id/tv_create_option5"
+        android:layout_below="@+id/tv_create_option4"/>
+
+    <Button
+        android:id="@+id/bv_create_addque"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/tv_create_option5"
+        android:background="@drawable/button_bgchange"
+        android:text="@string/addquestion" />
+
+    <Button
+        android:id="@+id/bv_create_create"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/tv_create_option5"
+        android:layout_toRightOf="@+id/bv_create_addque"
+        android:background="@drawable/button_bgchange"
+        android:text="@string/createquestionnaire" />
+
+    <RadioGroup
+        android:id="@+id/rg_createquenair"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/fl1"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_createquenair_mainface"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/mianbg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/mainface"
+            android:textColor="#000000" />
+
+        <RadioButton
+            android:id="@+id/rb_createquenair_scan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/scan_button_50"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/scan"
+            android:textColor="#000000" />
+
+        <RadioButton
+            android:id="@+id/rb_createquenair_create"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/fabu_50"
+            android:background="@mipmap/item_tdword"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/publish"
+            android:textColor="#000000" />
+
+        <RadioButton
+            android:id="@+id/rb_createquenair_mine"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/mine"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/mineface"
+            android:textColor="#000000" />
+    </RadioGroup>
+</RelativeLayout>

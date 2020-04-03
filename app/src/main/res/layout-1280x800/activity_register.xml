@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <TextView
+        android:id="@+id/tv_register_register"
+        android:layout_width="400px"
+        android:layout_height="344px"
+        android:layout_marginTop="-2dp"
+        android:text="@string/register"
+        android:textSize="30sp"
+        android:textColor="#001111"
+        android:gravity="center"
+        android:background="@mipmap/login_bg" />
+
+    <TextView
+        android:id="@+id/tv_register_login"
+        android:layout_width="400px"
+        android:layout_height="344px"
+        android:layout_toRightOf="@+id/tv_register_register"
+        android:layout_marginTop="-2dp"
+        android:text="@string/login"
+        android:textSize="30sp"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:background="@mipmap/register_bg" />
+
+    <TextView
+        android:id="@+id/tv_rphonenum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_register_register"
+        android:layout_marginTop="124px"
+        android:layout_marginLeft="50dp"
+        android:text="@string/PhoneNum"
+        android:textSize="30sp" />
+    <EditText
+        android:id="@+id/ev_rphonenum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_register_register"
+        android:layout_toRightOf="@+id/tv_rphonenum"
+        android:layout_marginTop="120px"
+        android:layout_marginRight="50dp"
+        android:background="@mipmap/editview"
+        android:hint="@string/InPhoneNum"
+        android:textSize="30sp"
+        android:maxLength="11"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tv_rpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_rphonenum"
+        android:layout_marginTop="84px"
+        android:layout_marginLeft="50dp"
+        android:text="@string/password"
+        android:textSize="30sp" />
+    <EditText
+        android:id="@+id/ev_rpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_rphonenum"
+        android:layout_toRightOf="@+id/tv_rpassword"
+        android:layout_marginTop="80px"
+        android:layout_marginRight="50dp"
+        android:hint="@string/Inpassword"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:inputType="textPassword"
+        android:background="@mipmap/editview"/>
+
+    <TextView
+        android:id="@+id/tv_rpassword2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ev_rpassword"
+        android:layout_marginTop="84px"
+        android:layout_marginLeft="50dp"
+        android:text="@string/confpassword"
+        android:textSize="30sp"/>
+
+    <EditText
+        android:id="@+id/ev_rpassword2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ev_rpassword"
+        android:layout_toRightOf="@+id/tv_rpassword2"
+        android:background="@mipmap/editview"
+        android:layout_marginTop="80px"
+        android:layout_marginRight="50dp"
+        android:hint="@string/confpassword2"
+        android:gravity="center"
+        android:inputType="textPassword"
+        android:textSize="30sp"/>
+
+    <Button
+        android:id="@+id/bv_rRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ev_rpassword2"
+        android:layout_marginTop="120px"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:text="@string/register"
+        android:textSize="30sp"
+        android:background="@drawable/button_bgchange"/>
+
+    <TextView
+        android:id="@+id/tv_rnameSet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_register_register"
+        android:layout_marginTop="124px"
+        android:layout_marginLeft="50dp"
+        android:text="@string/nameSet"
+        android:textSize="30sp"
+        android:visibility="invisible"
+        android:enabled="false"/>
+    <EditText
+        android:id="@+id/ev_rnameSet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_register_register"
+        android:layout_toRightOf="@+id/tv_rnameSet"
+        android:layout_marginTop="120px"
+        android:layout_marginRight="50dp"
+        android:textSize="30sp"
+        android:background="@mipmap/editview"
+        android:hint="@string/InnameSet"
+        android:gravity="center"
+        android:visibility="invisible"
+        android:enabled="false"/>
+
+    <TextView
+        android:id="@+id/tv_rquestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_rphonenum"
+        android:layout_marginTop="84px"
+        android:layout_marginLeft="50dp"
+        android:text="@string/secretQue"
+        android:textSize="30sp"
+        android:visibility="invisible"
+        android:enabled="false"/>
+    <EditText
+        android:id="@+id/ev_rquestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_rphonenum"
+        android:layout_toRightOf="@+id/tv_rquestion"
+        android:layout_marginTop="80px"
+        android:layout_marginRight="50dp"
+        android:hint="@string/InsecretQue"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:background="@mipmap/editview"
+        android:visibility="invisible"
+        android:enabled="false"/>
+
+    <TextView
+        android:id="@+id/tv_rqanswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ev_rpassword"
+        android:layout_marginTop="84px"
+        android:layout_marginLeft="50dp"
+        android:text="@string/secretAns"
+        android:textSize="30sp"
+        android:visibility="invisible"
+        android:enabled="false"/>
+
+    <EditText
+        android:id="@+id/ev_rqanswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ev_rpassword"
+        android:layout_toRightOf="@+id/tv_rqanswer"
+        android:background="@mipmap/editview"
+        android:layout_marginTop="80px"
+        android:layout_marginRight="50dp"
+        android:hint="@string/InsecretAns"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:visibility="invisible"
+        android:enabled="false"/>
+
+    <Button
+        android:id="@+id/bv_rsetInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ev_rpassword2"
+        android:layout_marginTop="120px"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:text="@string/setInfo"
+        android:textSize="30sp"
+        android:background="@drawable/button_bgchange"
+        android:visibility="invisible"
+        android:enabled="false"/>
+
+
+</RelativeLayout>

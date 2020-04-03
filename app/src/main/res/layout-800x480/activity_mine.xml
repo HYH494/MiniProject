@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainFace">
+
+    <ImageView
+        android:id = "@+id/iv_mine_minebg"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@mipmap/userbg"/>
+
+    <ImageView
+        android:id = "@+id/iv_mine_setting"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="170dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@+id/iv_mine_minebg"
+        android:src="@mipmap/setbg"/>
+
+    <TextView
+        android:id = "@+id/tv_mine_userid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/iv_mine_minebg"
+        android:text="@string/PhoneNum"
+        android:textSize = "18sp"/>
+
+    <TextView
+        android:id = "@+id/tv_mine_usernameset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/tv_mine_userid"
+        android:layout_toRightOf="@+id/iv_mine_minebg"
+        android:text="@string/nickname"
+        android:textSize = "18sp"/>
+    <Button
+        android:id="@+id/bv_mine_changelanguage"
+        android:layout_width="270dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/iv_mine_minebg"
+        android:text="@string/changelanguage"
+        android:visibility="invisible"
+        android:textSize = "18sp"
+        android:background="@drawable/button_bgchange"
+        />
+
+    <RadioGroup
+        android:id="@+id/rg_mine_language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_below="@id/bv_mine_changelanguage"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="10dp"
+        >
+        <RadioButton
+            android:id="@+id/rb_mine_chinese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="中文(Chinese)"/>
+        <RadioButton
+            android:id="@+id/rb_mine_english"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="英文(English)"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_mine_questionnaire"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rg_mine_language"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:maxLines="6"
+        android:scrollbars="vertical"
+        android:text="@string/createquestionnairehistory"
+        android:textSize="16sp"
+        android:gravity="center"/>
+
+    <RadioGroup
+        android:id="@+id/rg_mine"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/fl1"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_mine_mainface"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/mianbg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/mainface"
+            android:textColor="#000000" />
+
+        <RadioButton
+            android:id="@+id/rb_mine_scan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/scan_button_50"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/scan"
+            android:textColor="#000000" />
+
+        <RadioButton
+            android:id="@+id/rb_mine_create"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/fabu_50"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/publish"
+            android:textColor="#000000" />
+
+        <RadioButton
+            android:id="@+id/rb_mine_mine"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/mine"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@mipmap/item_tdword"
+            android:text="@string/mineface"
+            android:textColor="#000000" />
+    </RadioGroup>
+</RelativeLayout>
